@@ -3,9 +3,9 @@ from fastapi import APIRouter, File, Header, UploadFile
 import httpx
 import os
 import openai
-from utils import getLanguage
-from product import Product
-from config import HF_API_URL
+from app.utils import getLanguage
+from app.product import Product
+from app.config import HF_API_URL
 from dotenv import load_dotenv, find_dotenv
 
 _ = load_dotenv(find_dotenv())  # read local .env file
